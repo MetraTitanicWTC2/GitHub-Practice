@@ -16,6 +16,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func whenDivideButtonPressed(_sender: UIButton) {
+        let firstNumber = Int(firstNumberTextField.text!)!
+        let secondNumber = Int(secondNumberTextField.text!)!
+        operationLabel.text = "-"
+        answerLabel.text = "\(firstNumber / secondNumber)"
+    }
     @IBAction func whenSubractButtonPressed(_sender: UIButton) {
         let firstNumber = Int(firstNumberTextField.text!)!
         let secondNumber = Int(secondNumberTextField.text!)!
