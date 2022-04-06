@@ -46,6 +46,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add"/>
+                                <connections>
+                                    <action selector="whenAddButtonPressedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JlP-8c-ziX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbN-Ze-aU5">
                                 <rect key="frame" x="119" y="381" width="80" height="31"/>
@@ -58,6 +61,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Multiply"/>
+                                <connections>
+                                    <action selector="whenMultiplyButtonPressedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dH2-yT-0RE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="190-Ij-U4L">
                                 <rect key="frame" x="328" y="381" width="65" height="31"/>
@@ -76,6 +82,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="firstNumberTextField" destination="PZl-Wl-Vff" id="ECU-EW-WJ3"/>
+                        <outlet property="operationLabel" destination="91B-1Q-Ze0" id="2Mt-0T-W7d"/>
+                        <outlet property="secondNumberTextField" destination="qgC-xA-Szi" id="h5l-gn-jHc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
